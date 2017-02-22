@@ -32,8 +32,11 @@ class Hebb :
             w1n = w1+x1[i]*y[i]
             w2n = w2+x2[i]*y[i]
             bn = b+y[i]
+            print "[+] Weights and bias after iteration "+str(i)+" :"
+            print "W1 :" +str(w1n)
+            print "W2 :" +str(w2n)
+            print "b  :" +str(bn)
 
-            print  w1n, w2n, bn
 
             w1 = w1n
             w2 = w2n
@@ -66,8 +69,10 @@ class Hebb :
             w1n = w1+x1[i]*y[i]
             w2n = w2+x2[i]*y[i]
             bn = b+y[i]
-
-            print  w1n, w2n, bn
+            print "[+] Weights and bias after iteration "+str(i)+" :"
+            print "W1 :" +str(w1n)
+            print "W2 :" +str(w2n)
+            print "b  :" +str(bn)
 
             w1 = w1n
             w2 = w2n
