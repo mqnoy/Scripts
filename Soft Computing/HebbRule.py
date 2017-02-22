@@ -1,6 +1,6 @@
 '''Simple python script to get the final weights from Hebb Rule.'''
 
-__author__ = "Abhishek J M"
+__author__ = "Abhishek J M (jmabhishek4@gmail.com)"
 
 import argparse
 

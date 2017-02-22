@@ -31,6 +31,14 @@ class Perceptron :
 
         for i in range(0,4) :
 
+
+        '''
+        if (w1n != w1 or w2n != w2 or bn != b ) :
+            print "weights not same. "
+
+        if (w1n == w1 and w2n == w2 and bn == b ) :
+        '''
+
             yin = x1[i]*w1 + x2[i]*w2 + b
             if y[i] != yin :
                 w1n = w1+eta*x1[i]*y[i]
@@ -95,7 +103,7 @@ class Perceptron :
 
         print "\n"
         print "Final Weights :"
-        print w1, w2, b         
+        print w1, w2, b
 
 
 
