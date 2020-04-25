@@ -11,12 +11,18 @@ class Adaline :
 #Adaline training with AND logic
     def AdalAND(self) :
 
-        w1 = float(raw_input('Enter w1 :'))
-        w2 = float(raw_input('Enter w2 :'))
-        b = float(raw_input('Enter bias :'))
-        eta = float(raw_input('Enter learning rate :'))
+        # w1 = float(raw_input('Enter w1 :'))
+        # w2 = float(raw_input('Enter w2 :'))
+        # b = float(raw_input('Enter bias :'))
+        # eta = float(raw_input('Enter learning rate :'))
+        # iters = int(raw_input('Enter the number of iterations :'))
 
-        iters = int(raw_input('Enter the number of iterations :'))
+        w1 = 0
+        w2 = 0
+        b = 0
+        eta = 0.1
+
+        iters = 2
 
         x1 = [1, 1, -1, -1]
         x2 = [1, -1, 1, -1]
@@ -38,20 +44,20 @@ class Adaline :
                 bn = b + eta * (y[j] - yin)
 
                 print "\t[+] Weights and bias after iteration "+str(j)+" :"
-                print "\n\t\tW1 :" +str(w1n)
-                print "\t\tW2 :" +str(w2n)
-                print "\t\tb  :" +str(bn)
+                print "\n\t\tW1 :" +str(round(w1n,2))
+                print "\t\tW2 :" +str(round(w2n,2))
+                print "\t\tb  :" +str(round(bn,2))
 
                 w1 = w1n
                 w2 = w2n
                 b = bn
 
             print "\n\n[+] After epoch " +str(i)+ " :"
-            print w1, w2, b
+            print round(w1,2), round(w2,2), round(b,2)
 
         print "\n"
         print "Final Weights :"
-        print w1, w2, b
+        print round(w1,2), round(w2,2), round(b,2)
 
 
 
