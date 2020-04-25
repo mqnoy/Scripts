@@ -7,9 +7,8 @@ class Adaline :
     def __init__(self) :
         pass
 
-
-#Adaline training with AND logic
-    def AdalAND(self) :
+#Adaline training with OR logic
+    def AdalOR(self) :
 
         # w1 = float(raw_input('Enter w1 :'))
         # w2 = float(raw_input('Enter w2 :'))
@@ -61,7 +60,7 @@ class Adaline :
 
 def main() :
     adal = Adaline()
-    adal.AdalAND()
+    adal.AdalOR()
 
 
 if __name__ == '__main__' :
