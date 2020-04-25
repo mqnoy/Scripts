@@ -61,18 +61,7 @@ class Adaline :
 
 def main() :
     adal = Adaline()
-
-    print "[+] Choose :"
-    print "\t1. AND"
-    print "\t2. OR"
-
-    ch = int(raw_input())
-
-    if ch == 1 :
-        adal.AdalAND()
-
-    if ch == 2 :
-        adal.AdalOR()
+    adal.AdalAND()
 
 
 if __name__ == '__main__' :
